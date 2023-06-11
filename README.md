@@ -1,24 +1,31 @@
-# README
+Using `character-counter` from stimulus library.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Commands I ran to make `character-counter` work with a form field:
 
-Things you may want to cover:
+```
+- rails new -j esbuild -c bootstrap
+```
 
-* Ruby version
+```
+- bundle add simple_form
+```
 
-* System dependencies
+- rails g simple_form:install --bootstrap
 
-* Configuration
+```
 
-* Database creation
+```
 
-* Database initialization
+- rails g scaffold Post title description:text
 
-* How to run the test suite
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```
 
-* Deployment instructions
+- yarn add stimulus-character-counter
 
-* ...
+```
+
+- Register the character-counter controller in `index.js` file.
+- Look at `_form.html.erb` file to see how to bind the field and show the counter.
+```
